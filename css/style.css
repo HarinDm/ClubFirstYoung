@@ -121,12 +121,12 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #ffffff;
+  background-color: transparent;
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-track-piece {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -182,18 +182,29 @@ button:focus {
   outline: none;
 }
 
-/* a {
-    text-decoration: none;
+a {
+    /* text-decoration: none; */
     color: inherit;
-  } */
-
+  }
+  
 /* ----------------------------------------------------- */
 
 body {
     font-family: 'SBSansDisplay-Regular';
     background-color: #000;
     font-size: 30px;
+    background-image: url(../assets/img/bg-right.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
+
+.about{
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+  background-image: url(../assets/img/bg-left.svg);
+}
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -203,7 +214,7 @@ body {
   justify-content: center;
   color: white;
   letter-spacing: 1px;
-}  
+}
 
 .logo__icon {
     width: 163px;
@@ -222,6 +233,7 @@ h1 {
   font-size: 55px;
   font-family: 'SBSansDisplay-Regular';
   font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .about-description__block{
@@ -269,7 +281,60 @@ h1 {
   width: 33.33333%;
 }
 
+.about-link__sber{
+  margin-bottom: 60px;
+}
+
 .link-sber{
   color: #A32361;
 }
 
+.sber-logo{
+  width: 73px;
+  height: 74px;
+  margin: 87px 0 60px 26px;
+}
+
+.about-buttons{
+  margin-bottom: 150px;
+}
+
+.about-button{
+  border: 0px solid #A32361;
+  border-radius: 10px;
+  background-color: #A32361;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin: 0 30px;
+}
+
+.about-button__left{
+  padding: 16px 52px 16px 54px;
+}
+
+.about-button__right{
+  padding: 16px 45px 16px 44px;
+}
+
+.about-requisite{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 75px 0 160px;
+}
+.about-requisite__items{
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.about-requisite__items__INN{
+  text-align: end;
+  margin-right: 15px;
+}
+
+.about-requisite__items__OGRN{
+  text-align: start;
+  margin-left: 15px;
+}
